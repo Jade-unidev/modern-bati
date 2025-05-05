@@ -100,6 +100,26 @@
     margin-top: 2em;
 }
 
+.content-propos-mur {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.content-propos-mur::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('images/mur.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    opacity: 0.5; 
+    z-index: -1;
+}
+
+
 .slider {
     position: absolute;
     right: 0;
@@ -375,6 +395,8 @@
     text-align: center;
     color: #000000;
     font-size: 2em;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
 }
 
 .serv-pg-cmf-P1 {
@@ -384,3 +406,148 @@
     font-size: 1.5em;
     font-family: "Chewy", system-ui;
 }
+
+.serv-pg-cmf-P2 {
+    text-align: left;
+    margin-left: 4em;
+    font-weight: 500;
+    color: #f2b046;
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+}
+
+.serv-pg-cmf-P3 {
+    text-align: left;
+    margin-left: 6em;
+    color: #000000;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.li-cmf {
+    text-align: left;
+    margin-left: 8em;
+    color: #000000;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.serv-pg-cmf-P4 {
+    text-align: left;
+    margin-left: 6em;
+    color: #000000;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.serv-pg-cmf-P5 {
+    text-align: left;
+    margin-left: 6em;
+    color: #000000;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.serv-pg-cmf-P6 {
+    text-align: left;
+    margin-left: 6em;
+    color: #000000;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.back {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2b046;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #f2b046;
+}
+   
+.back > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+   
+.back:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+}
+   
+.back:hover {
+    box-shadow: 9px 9px 33px #f2b046, -9px -9px 33px #f2b046;
+    transform: translateY(-2px);
+}
+
+.btn-back {
+    margin-left: 33%;
+    padding-bottom: 3em;
+}
+
+.serv-pg-odm-P1 {
+    text-align: center;
+    font-weight: 500;
+    color: #f2b046;
+    font-size: 1.5em;
+    font-family: "Chewy", system-ui;
+}
+
+.serv-pg-odm-P2 {
+    text-align: left;
+    margin-left: 4em;
+    font-weight: 500;
+    color: #f2b046;
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+}
+
+.serv-pg-odm-P3 {
+    text-align: left;
+    margin-left: 6em;
+    color: #000000;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.li-odm {
+    text-align: left;
+    margin-left: 8em;
+    color: #000000;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.serv-pg-odm-P4 {
+    text-align: left;
+    margin-left: 6em;
+    color: #000000;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.serv-pg-odm-P5 {
+    text-align: left;
+    margin-left: 4em;
+    font-weight: 500;
+    color: #f2b046;
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+}
+
+.serv-pg-odm-P6 {
+    text-align: left;
+    margin-left: 6em;
+    color: #000000;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
