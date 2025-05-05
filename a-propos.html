@@ -30,16 +30,17 @@
             <span class="special-font">MODERN BATI</span><br>Maçonnerie générale votre projet avec expertise et passion
         </div>
 
-        <div class="navbar">
-            <a href="index.html">Accueil</a>
-            <a href="a-propos.html">À propos de nous</a>
-            <a href="#">Produits</a>
-            <a href="#">Contact</a>
-        </div>
+        
 
         <div class="hero">
             <img src="images/back_img.png" class="bg-img-2">
             <div class="hero-content">
+                <div class="navbar">
+                    <a href="index.html">Accueil</a>
+                    <a href="a-propos.html">À propos de nous</a>
+                    <a href="#">Produits</a>
+                    <a href="#">Contact</a>
+                </div>
                 <p class="Ptitle">A PROPOS DE NOUS...</p>
             </div>
         </div>
@@ -158,6 +159,19 @@
 
         </div>
 
+
+        <script>
+            const navbar = document.querySelector('.navbar');
+        
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        </script>
+        
 
         <script>
             let index = 0;

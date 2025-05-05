@@ -14,14 +14,25 @@
 .navbar {
     position: sticky;
     top: 0;
-    background-color: #f2b046;
-    color: #ffffff;
     display: flex;
     justify-content: space-around;
     padding: 1em;
-    z-index: 1000;
     font-family: "Cal Sans", sans-serif;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+    color: white;
+    z-index: 1000;
 }
+
+.navbar.scrolled {
+    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 
 .navbar a {
     color: white;
@@ -70,7 +81,7 @@
     z-index: 1;
     color: white;
     text-align: center;
-    padding-top: 5em;
+
 }
   
 .content {
@@ -90,6 +101,7 @@
     width: 45%;
     height: 20em;
     overflow: hidden;
+    z-index: 0;
 }
 
 .slide {
