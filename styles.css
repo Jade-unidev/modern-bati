@@ -89,10 +89,15 @@
     padding: 40px;
 }
 
-.content-propos {
+.content-propos-spe {
     background-color: white;
     padding: 40px;
     display: flex;
+}
+
+.content-propos {
+    background-color: white;
+    margin-top: 2em;
 }
 
 .slider {
@@ -257,4 +262,125 @@
     text-decoration: none;
     color: #d48506;
     font-weight: 900;
+}
+
+.img-serv {
+    width: 30em;
+    height: 15em;
+}
+
+.column-1 {
+    text-align: left;
+    flex-direction: column;
+    margin-top: -15em;
+}
+
+.column-2 {
+    text-align: right;
+    flex-direction: column;
+    padding-left: 12em;
+    margin-top: -15em;
+}
+
+.serv-title {
+    color: #f2b046;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.serv-txt {
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+}
+
+.img-glob {
+    text-align: left;
+    padding-top: 5em;
+}
+
+.img-glob-spe {
+    text-align: left;
+    padding-top: 6.2em;
+}
+
+.img-glob-spe2 {
+    text-align: left;
+    padding-top: 7em;
+}
+
+.img-glob-spe3 {
+    text-align: left;
+    padding-top: 6em;
+}
+
+.img-glob-spe4 {
+    text-align: left;
+    padding-top: 7em;
+}
+
+.cta {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+  
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+  
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+  
+.cta:hover svg {
+    transform: translateX(0);
+}
+  
+.cta:active svg {
+    transform: scale(0.9);
+}
+  
+.hover-underline-animation {
+    position: relative;
+    color: #f2b046;
+    padding-bottom: 20px;
+}
+  
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f2b046;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.serv-pg-title {
+    margin-top: -8em;
+    text-align: center;
+    color: #000000;
+    font-size: 2em;
+}
+
+.serv-pg-cmf-P1 {
+    text-align: center;
+    font-weight: 500;
+    color: #f2b046;
+    font-size: 1.5em;
+    font-family: "Chewy", system-ui;
 }
